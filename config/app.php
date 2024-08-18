@@ -62,7 +62,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost:8000'),
 
-    'asset_url' => env('ASSET_URL', null),
+    'asset_url' => env('ASSET_URL',env('APP_URL').env('MEDIA_DISK')),
     'media_disc' => env('MEDIA_DISK', 'public'),
 
     /*
