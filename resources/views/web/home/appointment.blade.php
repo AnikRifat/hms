@@ -3,7 +3,7 @@
     {{ __('messages.appointments') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/appointment.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/appointment.css') }}"> --}}
 @endsection
 @section('content')
     @php
@@ -151,10 +151,10 @@
     </div>
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ mix('assets/js/custom/custom.js') }}"></script> --}}
-    {{--    <script src="{{ mix('assets/js/custom/helpers.js') }}"></script> --}}
+    {{--    <script src="{{ asset('assets/js/custom/custom.js') }}"></script> --}}
+    {{--    <script src="{{ asset('assets/js/custom/helpers.js') }}"></script> --}}
     <script src="{{ asset('backend/js/moment-round/moment-round.js') }}"></script>
-    {{--        <script src="{{mix('assets/js/web/appointment.js')}}"></script> --}}
+    {{--        <script src="{{asset('assets/js/web/appointment.js')}}"></script> --}}
 @endsection
 @section('scripts')
     <script src="https://js.stripe.com/v3/"></script>

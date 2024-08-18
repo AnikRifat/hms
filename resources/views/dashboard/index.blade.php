@@ -24,5 +24,5 @@
         @include('employees.notice_boards.show_modal')
     </div>
 @endsection
-{{--    <script src="{{mix('assets/js/dashboard/dashboard.js')}}"></script> --}}
-{{--    <script src="{{mix('assets/js/custom/input_price_format.js')}}"></script> --}}
+{{--    <script src="{{asset('assets/js/dashboard/dashboard.js')}}"></script> --}}
+{{--    <script src="{{asset('assets/js/custom/input_price_format.js')}}"></script> --}}

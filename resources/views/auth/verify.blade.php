@@ -17,7 +17,7 @@
     <link rel="icon" href="{{ $settingValue['favicon']['value'] }}" type="image/png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Email Verification | {{ config('app.name') }}</title>
-    <link rel="stylesheet" href="{{ mix('web_front/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('web_front/css/bootstrap.css') }}">
     @yield('page_css')
 </head>
 <body>

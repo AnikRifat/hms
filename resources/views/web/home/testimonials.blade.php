@@ -3,7 +3,7 @@
     {{ __('messages.web_home.testimonials') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ mix('web_front/css/testimonials.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('web_front/css/testimonials.css') }}">--}}
 @endsection
 @section('content')
     <div class="home-page">
@@ -75,6 +75,6 @@
             </div>
         </section>
         <!-- end testimonial-section -->
-        
+
     </div>
 @endsection

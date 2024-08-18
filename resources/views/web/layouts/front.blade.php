@@ -19,17 +19,17 @@
     <link rel="icon" href="{{ $settingValue['favicon']['value'] }}" type="image/png">
     {{--    <link rel="stylesheet" href="{{ asset('web_front/css/slick.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('web_front/css/slick-theme.css') }}"> --}}
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/bootstrap.css') }}"> --}}
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/home.css') }}"> --}}
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/layout.css') }}"> --}}
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/layout.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/bootstrap.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/home.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/layout.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/layout.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('web_front/css/remixicon.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('web_front/css/jquery-ui.min.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('web_front/css/selectize.min.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('web_front/css/style.css') }}"> --}}
-    <link rel="stylesheet" href="{{ mix('css/front-third-party.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/front-pages.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front-third-party.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front-pages.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     @yield('page_css')
@@ -45,14 +45,14 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
     {{-- <script src="{{ asset('js/turbo.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
-    <script src="{{ mix('js/front-third-party.js') }}"></script>
+    <script src="{{ asset('js/front-third-party.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="{{ asset('messages.js') }}"></script>
     @routes
     {{--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="{{ mix('js/front-pages.js') }}"></script>
+    <script src="{{ asset('js/front-pages.js') }}"></script>
     @yield('page_scripts')
     <script>
         $(document).ready(function() {

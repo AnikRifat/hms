@@ -3,7 +3,7 @@
     {{ __('messages.doctor.doctor_details') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/doctors.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/doctors.css') }}"> --}}
 @endsection
 @section('content')
     <!-- start hero section -->
