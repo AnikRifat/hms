@@ -3,7 +3,7 @@
     {{ __('messages.item.edit_item') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/int-tel/css/intlTelInput.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/int-tel/css/intlTelInput.css') }}">--}}
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">

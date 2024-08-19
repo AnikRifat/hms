@@ -3,7 +3,7 @@
     {{ __('messages.document.document_type_details') }}
 @endsection
 @section('css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/detail-header.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/detail-header.css') }}">--}}
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">

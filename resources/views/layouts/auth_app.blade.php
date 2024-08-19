@@ -9,19 +9,19 @@
     <meta name="keyword" content="hospital,doctor,patient,fever,MD,MS,MBBS">
     <link rel="icon" href="{{ $settingValue['favicon']['value'] }}" type="image/png">
     <link rel="canonical" href="{{ route('front') }}" />
-    <link rel="stylesheet" href="{{ asset('favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('public/favicon.ico') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/third-party.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-    <link href="{{ asset('/assets/css/custom-auth.css') }}" rel="stylesheet" type="text/css" />
-    {{--    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/pages.css') }}"> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/third-party.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/style.css') }}">
+    <link href="{{ asset('public//assets/css/custom-auth.css') }}" rel="stylesheet" type="text/css" />
+    {{--    <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/pages.css') }}"> --}}
     <!-- CSS Libraries -->
     @yield('css')
     <!-- Scripts -->
-    <script src="{{ asset('assets/js/third-party.js') }}"></script>
-    <script src="{{ asset('messages.js') }}"></script>
-    <script src="{{ asset('js/pages.js') }}"></script>
+    <script src="{{ asset('public/assets/js/third-party.js') }}"></script>
+    <script src="{{ asset('public/messages.js') }}"></script>
+    <script src="{{ asset('public/js/pages.js') }}"></script>
     @yield('scripts')
     <script>
         $(document).ready(function() {

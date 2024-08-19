@@ -3,7 +3,7 @@
     {{ __('messages.medicine.medicine_brands') }}
 @endsection
 @section('css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -20,7 +20,7 @@
     {{--    <script>--}}
     {{--let brandUrl = "{{url('brands')}}";--}}
     {{--    </script>--}}
-    {{--    <script src="{{ asset('assets/js/brands/brands.js') }}"></script>--}}
-    {{--    <script src="{{ asset('assets/js/custom/delete.js') }}"></script>--}}
-    {{--    <script src="{{ asset('assets/js/custom/custom-datatable.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/brands/brands.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/custom/delete.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/custom/custom-datatable.js') }}"></script>--}}
 @endsection

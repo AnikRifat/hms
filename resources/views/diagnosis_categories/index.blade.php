@@ -3,8 +3,8 @@
     {{ __('messages.diagnosis_category.diagnosis_categories') }}
 @endsection
 @section('css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/livewire-table.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/livewire-table.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">

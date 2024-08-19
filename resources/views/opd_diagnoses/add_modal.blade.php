@@ -34,7 +34,7 @@
                         <div class="d-block">
                             <div class="image-picker">
                                 <div class="image previewImage" id="opdDiagnosisPreviewImage"
-                                     style="background-image: url({{ asset('assets/img/default_image.jpg') }})">
+                                     style="background-image: url({{ asset('public/assets/img/default_image.jpg') }})">
                                 </div>
                                 <span class="picker-edit rounded-circle text-gray-500 fs-small" title="{{__('messages.ipd_patient_diagnosis.document')}}">
                                     <label>

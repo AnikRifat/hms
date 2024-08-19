@@ -3,7 +3,7 @@
     {{ __('messages.visitor.new') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/int-tel/css/intlTelInput.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/int-tel/css/intlTelInput.css') }}">--}}
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">
@@ -26,9 +26,9 @@
                 {{ Form::hidden('visitorUrl', route('visitors.index'), ['class' => 'visitorUrl']) }}
                 {{ Form::hidden('downloadDocumentUrl', url('visitor-download'), ['class' => 'downloadDocumentUrl']) }}
                 {{ Form::hidden('documentError', __('messages.expense.document_error'), ['id' => 'documentError']) }}
-                {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+                {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
                 {{ Form::hidden('isEdit', false, ['class' => 'isEdit']) }}
-                {{ Form::hidden('defaultDocumentImageUrl', asset('assets/img/default_image.jpg'), ['class' => 'defaultDocumentImageUrl']) }}
+                {{ Form::hidden('defaultDocumentImageUrl', asset('public/assets/img/default_image.jpg'), ['class' => 'defaultDocumentImageUrl']) }}
                 <div class="card-body p-12">
                     {{ Form::open(['route' => 'visitors.store','id' => 'createVisitorForm','files' => true, 'enctype' => 'multipart/form-data']) }}
 

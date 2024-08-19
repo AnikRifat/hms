@@ -9,7 +9,7 @@
         <div class="d-flex flex-column">
             {{Form::hidden('documentsCreateUrl',route('documents.store'),['id'=>'indexDocumentsCreateUrl','class'=>'documentsCreateUrl'])}}
             {{Form::hidden('documentsUrl',route('documents.index'),['id'=>'indexDocumentsUrl','class'=>'documentsUrl'])}}
-            {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'indexDefaultDocumentImageUrl','class'=>'defaultDocumentImageUrl'])}}
+            {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'indexDefaultDocumentImageUrl','class'=>'defaultDocumentImageUrl'])}}
             {{Form::hidden('downloadDocumentUrl',url('document-download'),['id'=>'indexDownloadDocumentUrl','class'=>'downloadDocumentUrl'])}}
             {{Form::hidden('patientUrl',route('patients.index'),['id'=>'indexPatientUrl','class'=>'patientUrl'])}}
             {{ Form::hidden('documents', __('messages.document.document'), ['id' => 'Documents']) }}

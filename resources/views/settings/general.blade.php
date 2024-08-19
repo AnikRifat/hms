@@ -148,7 +148,7 @@
                     ?>
                     <div class="image-picker">
                         <div class="image previewImage" id="previewImage" {{ $style }}"{{ $background }}
-                            url('{{ $settings['app_logo'] ? $settings['app_logo'] : asset('assets/img/default_image.jpg') }}')">
+                            url('{{ $settings['app_logo'] ? $settings['app_logo'] : asset('public/assets/img/default_image.jpg') }}')">
                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                 title="{{ __('messages.common.change') . ' ' . __('messages.setting.app_logo') }}">
                                 <label>
@@ -176,7 +176,7 @@
 
                     <div class="image-picker">
                         <div class="image previewImage" id="previewImage" {{ $style }}"{{ $background }}
-                            url('{{ $settings['favicon'] ? $settings['favicon'] : asset('web/img/favicon.png') }}')">
+                            url('{{ $settings['favicon'] ? $settings['favicon'] : asset('public/web/img/favicon.png') }}')">
                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                 title="{{ __('messages.common.change') . ' ' . __('messages.setting.favicon') . ' ' . __('messages.icon') }}">
                                 <label>

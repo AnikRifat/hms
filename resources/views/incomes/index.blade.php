@@ -3,7 +3,7 @@
     {{ __('messages.incomes.incomes') }}
 @endsection
 @section('css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}"> --}}
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -15,7 +15,7 @@
             @include('incomes.edit_modal')
             {{ Form::hidden('incomeUrl', url('incomes'), ['id' => 'indexIncomeUrl']) }}
             {{ Form::hidden('incomeCreateUrl', route('incomes.store'), ['id' => 'indexIncomeCreateUrl']) }}
-            {{ Form::hidden('defaultDocumentImageUrl', asset('assets/img/default_image.jpg'), ['id' => 'indexIncomeDefaultDocumentImageUrl']) }}
+            {{ Form::hidden('defaultDocumentImageUrl', asset('public/assets/img/default_image.jpg'), ['id' => 'indexIncomeDefaultDocumentImageUrl']) }}
             {{ Form::hidden('incomeHeadArray', json_encode($incomeHeads), ['id' => 'indexIncomeHeadArray']) }}
             {{ Form::hidden('download', __('messages.incomes.download'), ['id' => 'indexIncomeDownload']) }}
             {{ Form::hidden('documentError', __('messages.incomes.document_error'), ['id' => 'indexIncomeDocumentError']) }}

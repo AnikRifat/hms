@@ -17,14 +17,14 @@
     <link rel="icon" href="{{ $settingValue['favicon']['value'] }}" type="image/png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Email Verification | {{ config('app.name') }}</title>
-    <link rel="stylesheet" href="{{ asset('web_front/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web_front/css/bootstrap.css') }}">
     @yield('page_css')
 </head>
 <body>
     <div class="container con-404 vh-100 d-flex justify-content-center">
         <div class="row justify-content-md-center d-block">
             <div class="col-md-12 mt-5">
-                <img src="{{ asset('web/img/verification.png') }}" class="img-fluid img-404 mx-auto d-block">
+                <img src="{{ asset('public/web/img/verification.png') }}" class="img-fluid img-404 mx-auto d-block">
             </div>
             <div class="col-md-12 text-center mt-5">
                 <h2>{{ __('messages.verification.verify_your_email_address') }}</h2>

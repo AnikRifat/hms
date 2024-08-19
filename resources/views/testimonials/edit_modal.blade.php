@@ -33,7 +33,7 @@
                                 <div class="image-picker">
                                     <div class="image previewImage" id="editTestimonialPreviewImage"
                                         {{ $style }}"{{ $background }}
-                                        url({{ asset('assets/img/default_image.jpg') }}">
+                                        url({{ asset('public/assets/img/default_image.jpg') }}">
                                         <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                             title="{{ __('messages.common.change_profile') }}">
                                             <label>

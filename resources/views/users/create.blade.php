@@ -18,9 +18,9 @@
                 <div class="card">
                     <div class="card-body">
                         {{Form::hidden('user_url',route('users.index'),['id'=>'createUserUrl'])}}
-                        {{Form::hidden('utilsScript',asset('assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
+                        {{Form::hidden('utilsScript',asset('public/assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
                         {{Form::hidden('phoneNo',old('prefix_code').old('phone'),['class'=>'phoneNo'])}}
-                        {{Form::hidden('defaultAvatarImageUrl',asset('assets/img/avatar.png'),['class'=>'defaultAvatarImageUrl'])}}
+                        {{Form::hidden('defaultAvatarImageUrl',asset('public/assets/img/avatar.png'),['class'=>'defaultAvatarImageUrl'])}}
                         {{Form::hidden('isEdit',false,['class'=>'isEdit'])}}
                         {{Form::hidden('downloadDocument_url',url('visitor-download'),['id'=>'userDownloadDocumentUrl'])}}
                         {{Form::hidden('doctorRole',array_search('Doctor', $role),['id'=>'userDoctorRole'])}}

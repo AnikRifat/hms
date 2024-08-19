@@ -22,7 +22,7 @@
                 {{ Form::hidden('doctorUrl', url('doctors'), ['id' => 'showOpdDoctorUrl']) }}
                 {{ Form::hidden('patient_id', $opdPatientDepartment->patient_id, ['id' => 'showOpdPatientId']) }}
                 {{ Form::hidden('opdPatientDepartmentId', $opdPatientDepartment->id, ['id' => 'showOpdPatientDepartmentId']) }}
-                {{ Form::hidden('defaultDocumentImageUrl', asset('assets/img/default_image.jpg'), ['id' => 'showOpdDefaultDocumentImageUrl', 'class' => 'defaultDocumentImageUrl']) }}
+                {{ Form::hidden('defaultDocumentImageUrl', asset('public/assets/img/default_image.jpg'), ['id' => 'showOpdDefaultDocumentImageUrl', 'class' => 'defaultDocumentImageUrl']) }}
                 {{ Form::hidden('opdDiagnosisCreateUrl', route('opd.diagnosis.store'), ['id' => 'showOpdDiagnosisCreateUrl']) }}
                 {{ Form::hidden('opdDiagnosisUrl', route('opd.diagnosis.index'), ['id' => 'showOpdDiagnosisUrl']) }}
                 {{ Form::hidden('downloadDiagnosisDocumentUrl', url('opd-diagnosis-download'), ['id' => 'showOpdDownloadDiagnosisDocumentUrl']) }}
@@ -53,7 +53,7 @@
                 {{ Form::hidden('OpdPrescriptionUrl', route('opd.prescription.index'), ['id' => 'showOpdPrescriptionUrl']) }}
                 {{Form::hidden('OpdPrescriptionCreateUrl',route('opd.prescription.store'),['id'=>'showOpdPrescriptionCreateUrl'])}}
                 {{Form::hidden('opd_prescription',__('messages.ipd_prescription'),['id'=>'opdPrescription'])}}
-                
+
                 <div class="col-12">
                     @include('flash::message')
                 </div>

@@ -14,20 +14,20 @@
     <title>404 Not Found | {{ config('app.name') }}</title>
 
     <!-- Bootstrap 4.1.1 -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
 
-    <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('web/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web/css/responsive.css') }}">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('assets/css/@fortawesome/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/simple-line-icons/css/simple-line-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/@fortawesome/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/simple-line-icons/css/simple-line-icons.css') }}">
 </head>
 <body>
 <div class="container con-404">
     <div class="row justify-content-md-center my-auto d-block">
         <div class="col-md-12">
-            <img src="{{ asset('web/img/404_image.png') }}" class="img-fluid img-404 mx-auto d-block">
+            <img src="{{ asset('public/web/img/404_image.png') }}" class="img-fluid img-404 mx-auto d-block">
         </div>
         <div class="col-md-12 text-center">
             <h2>Opps! Something's missing...</h2>
@@ -37,9 +37,9 @@
         </div>
     </div>
 </div>
-<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('web/js/scripts.js') }}"></script>
+<script src="{{ asset('public/assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('public/assets/js/popper.min.js') }}"></script>
+<script src="{{ asset('public/assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('public/web/js/scripts.js') }}"></script>
 </body>
 </html>

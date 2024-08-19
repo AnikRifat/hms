@@ -3,7 +3,7 @@
     {{ __('messages.web_home.home') }}
 @endsection
 @section('page_css')
-    <link rel="stylesheet" href="{{ asset('web/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web/css/animate.css') }}">
 @endsection
 @section('content')
     <div class="container">
@@ -17,7 +17,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/super-admin.png') }}">
+                                            <img src="{{ asset('public/web/img/super-admin.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">super admin</h6>
@@ -29,7 +29,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/admin.png') }}">
+                                            <img src="{{ asset('public/web/img/admin.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">admin</h6>
@@ -42,7 +42,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/doctor.png') }}">
+                                            <img src="{{ asset('public/web/img/doctor.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">doctor</h6>
@@ -54,7 +54,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/pharmacist.png') }}">
+                                            <img src="{{ asset('public/web/img/pharmacist.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">pharmacist</h6>
@@ -65,14 +65,14 @@
                             </div>
                             <div
                                 class="col-12 features-center-image d-flex justify-content-center align-items-center col-md-8 offset-md-2 col-lg-4 offset-lg-0">
-                                <img src="{{ asset('web/img/desktop-screen.png') }}" alt="">
+                                <img src="{{ asset('public/web/img/desktop-screen.png') }}" alt="">
                             </div>
                             <div class="col-12 features-list col-md-8 offset-md-2 col-lg-4 offset-lg-0">
                                 <div class="feature-item px-2 py-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/pathology.png') }}">
+                                            <img src="{{ asset('public/web/img/pathology.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">pathology</h6>
@@ -84,7 +84,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/radiology.png') }}">
+                                            <img src="{{ asset('public/web/img/radiology.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">radiology</h6>
@@ -96,7 +96,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/receptionist.png') }}">
+                                            <img src="{{ asset('public/web/img/receptionist.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">receptionist</h6>
@@ -109,7 +109,7 @@
                                     <div class="row no-gutters">
                                         <div
                                             class="feature-item-image col-2 text-center d-flex justify-content-center align-items-center">
-                                            <img src="{{ asset('web/img/accountant.png') }}">
+                                            <img src="{{ asset('public/web/img/accountant.png') }}">
                                         </div>
                                         <div class="feature-item-content col-10 d-flex flex-column justify-content-center">
                                             <h6 class="m-0">accountant</h6>
@@ -161,5 +161,5 @@
     </div>
 @endsection
 @section('page_scripts')
-    <script src="{{ asset('web/js/wow.min.js') }}"></script>
+    <script src="{{ asset('public/web/js/wow.min.js') }}"></script>
 @endsection

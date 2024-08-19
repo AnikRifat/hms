@@ -7,9 +7,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="icon" href="{{ asset('web/img/logo.jpg') }}" type="image/png">
+    <link rel="icon" href="{{ asset('public/web/img/logo.jpg') }}" type="image/png">
     <title>{{ __('messages.ipd_prescription') }}</title>
-    <link href="{{ asset('assets/css/ipd-prescription-pdf.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/assets/css/ipd-prescription-pdf.css') }}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>

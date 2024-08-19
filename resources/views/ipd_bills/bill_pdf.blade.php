@@ -3,9 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="icon" href="{{ asset('web/img/logo.jpg') }}" type="image/png">
+    <link rel="icon" href="{{ asset('public/web/img/logo.jpg') }}" type="image/png">
     <title>{{ __('messages.bill.bill_details') }}</title>
-    <link href="{{ asset('assets/css/bill-pdf.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/assets/css/bill-pdf.css') }}" rel="stylesheet" type="text/css" />
     <style>
         body {
             font-family: DejaVu Sans, Arial, "Helvetica", Arial, "Liberation Sans", sans-serif;

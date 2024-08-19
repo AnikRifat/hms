@@ -23,9 +23,9 @@
             </div>
             <div class="card">
                 {{ Form::hidden('visitorUrl', route('visitors.index'), ['class' => 'visitorUrl']) }}
-                {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+                {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
                 {{ Form::hidden('isEdit', true, ['class' => 'isEdit']) }}
-                {{ Form::hidden('defaultDocumentImageUrl', asset('assets/img/default_image.jpg'), ['class' => 'defaultDocumentImageUrl']) }}
+                {{ Form::hidden('defaultDocumentImageUrl', asset('public/assets/img/default_image.jpg'), ['class' => 'defaultDocumentImageUrl']) }}
                 <div class="card-body">
                     {{ Form::model($visitor, ['route' => ['visitors.update', $visitor->id], 'files' => 'true', 'method' => 'patch', 'id' => 'editVisitorForm']) }}
                     @include('visitors.fields')

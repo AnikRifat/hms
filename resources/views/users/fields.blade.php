@@ -107,9 +107,9 @@
                         <div class="d-block">
                             @php
                                 if ($isEdit) {
-                                    $image = isset($user->media[0]) ? $user->image_url : asset('assets/img/avatar.png');
+                                    $image = isset($user->media[0]) ? $user->image_url : asset('public/assets/img/avatar.png');
                                 } else {
-                                    $image = asset('assets/img/avatar.png');
+                                    $image = asset('public/assets/img/avatar.png');
                                 }
                             @endphp
 

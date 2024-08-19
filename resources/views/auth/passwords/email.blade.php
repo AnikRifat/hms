@@ -5,7 +5,7 @@
 @endsection
 @section('content')
     @php
-        $style = 'style=background-image:url(' . asset('assets/img/progress-hd.png') . ')';
+        $style = 'style=background-image:url(' . asset('public/assets/img/progress-hd.png') . ')';
         $settingValue = getSettingValue();
         App::setLocale(checkLanguageSession());
     @endphp
@@ -69,7 +69,7 @@
 {{-- @section('content') --}}
 {{--    @include('flash::message') --}}
 {{--    @php --}}
-{{--        $style = 'style=background-image:url('.asset('assets/img/progress-hd.png').')'; --}}
+{{--        $style = 'style=background-image:url('.asset('public/assets/img/progress-hd.png').')'; --}}
 {{--        $settingValue = getSettingValue(); --}}
 {{--        App::setLocale(session('languageName')); --}}
 {{--    @endphp --}}

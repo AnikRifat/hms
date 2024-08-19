@@ -18,9 +18,9 @@
             <div class="card">
                 <div class="card-body">
                     {{Form::hidden('userUrl',route('users.index'),['id'=>'editUserUrl'])}}
-                    {{Form::hidden('utilsScript',asset('assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
+                    {{Form::hidden('utilsScript',asset('public/assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
                     {{Form::hidden('phoneNo',old('prefix_code').old('phone'),['class'=>'phoneNo'])}}
-                    {{Form::hidden('defaultAvatarImageUrl',asset('assets/img/avatar.png'),['class'=>'defaultAvatarImageUrl'])}}
+                    {{Form::hidden('defaultAvatarImageUrl',asset('public/assets/img/avatar.png'),['class'=>'defaultAvatarImageUrl'])}}
                     {{Form::hidden('isEdit',true,['class'=>'isEdit'])}}
 
                     {{ Form::model($user, ['route' => ['users.update', $user->id], 'files' => 'true', 'method' => 'patch', 'id' => 'editUserForm']) }}

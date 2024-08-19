@@ -3,17 +3,17 @@
     {{ __('messages.call_logs') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/int-tel/css/intlTelInput.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/int-tel/css/intlTelInput.css') }}">--}}
 @endsection
 @section('css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">
         <div class="d-flex flex-column">
             @include('flash::message')
             {{ Form::hidden('callLogUrl', route('call_logs.index'), ['class' => 'callLogUrl']) }}
-            {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+            {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
             {{ Form::hidden('incoming', __('messages.call_log.incoming'), ['id' => 'incoming']) }}
             {{ Form::hidden('outgoing', __('messages.call_log.outgoing'), ['id' => 'outgoing']) }}
             {{ Form::hidden('callTypeIncoming', \App\Models\CallLog::INCOMING, ['id' => 'callTypeIncoming']) }}

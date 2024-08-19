@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="card">
-                {{Form::hidden('utilsScript',asset('assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
+                {{Form::hidden('utilsScript',asset('public/assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
                 {{Form::hidden('isEdit',false,['class'=>'isEdit'])}}
                 {{Form::hidden('patientBirthUrl',route('patients.birthDate'),['id'=>'admissionPatientBirthUrl'])}}
 

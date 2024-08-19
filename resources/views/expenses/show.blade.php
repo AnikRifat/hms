@@ -30,7 +30,7 @@
     </div>
     @include('expenses.edit_modal')
     {{Form::hidden('expenseUrl',url('expenses'),['id'=>'showExpenseUrl'])}}
-    {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'showExpenseDefaultDocumentImageUrl'])}}
+    {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'showExpenseDefaultDocumentImageUrl'])}}
     {{Form::hidden('download',__('messages.expense.download'),['id'=>'showExpenseDownload'])}}
     {{Form::hidden('documentError',__('messages.expense.document_error'),['id'=>'showExpenseDocumentError'])}}
 @endsection

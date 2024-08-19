@@ -3,8 +3,8 @@
     {{ __('messages.roles') }}
 @endsection
 @section('page_css')
-    {{--    <link href="{{ asset('assets/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css"/>--}}
-    {{--    <link href="{{ asset('assets/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>--}}
+    {{--    <link href="{{ asset('public/assets/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css"/>--}}
+    {{--    <link href="{{ asset('public/assets/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>--}}
 @endsection
 
 @section('content')
@@ -43,6 +43,6 @@
         {{ Form::hidden('departmentUrl', route('departments.index'), ['id' => 'indexDepartmentUrl']) }}
     </div>
 @endsection
-{{--    <script src="{{asset('assets/js/departments/departments.js')}}"></script>--}}
-{{--    <script src="{{ asset('assets/js/custom/reset_models.js') }}"></script>--}}
+{{--    <script src="{{asset('public/assets/js/departments/departments.js')}}"></script>--}}
+{{--    <script src="{{ asset('public/assets/js/custom/reset_models.js') }}"></script>--}}
 

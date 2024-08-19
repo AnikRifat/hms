@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <div class="d-flex flex-column">
             @include('flash::message')
-            {{Form::hidden('defaultDocumentImageUrl',asset('web_front/images/services/medicine.png'),['id'=>'indexServiceDefaultDocumentImageUrl'])}}
+            {{Form::hidden('defaultDocumentImageUrl',asset('public/web_front/images/services/medicine.png'),['id'=>'indexServiceDefaultDocumentImageUrl'])}}
             {{Form::hidden('fontServicesCreateUrl',route('front.cms.services.store'),['id'=>'indexFrontServicesCreateUrl'])}}
             {{Form::hidden('fontServicesUrl',route('front.cms.services.index'),['id'=>'indexFrontServicesUrl'])}}
             {{ Form::hidden('front_service', __('messages.package.service'), ['id' => 'frontService']) }}

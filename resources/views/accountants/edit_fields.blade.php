@@ -96,7 +96,7 @@
 
                 <div class="image-picker">
                     <div class="image previewImage" id="previewImage" {{ $style }}"{{ $background }}
-                        url({{ isset($user->media[0]) ? $user->image_url : asset('assets/img/avatar.png') }}">
+                        url({{ isset($user->media[0]) ? $user->image_url : asset('public/assets/img/avatar.png') }}">
                         <span class="picker-edit rounded-circle text-gray-500 fs-small"
                             title="{{ __('messages.common.change_profile') }}">
                             <label>

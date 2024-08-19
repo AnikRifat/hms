@@ -3,7 +3,7 @@
     {{ __('messages.opd_patients') }}
 @endsection
 @section('css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">

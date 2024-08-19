@@ -40,7 +40,7 @@
 
                                 <div class="image-picker">
                                     <div class="image previewImage" id="dispatchPreviewImage"
-                                    {{$style}}"{{$background}} url({{ asset('assets/img/default_image.jpg')}}">
+                                    {{$style}}"{{$background}} url({{ asset('public/assets/img/default_image.jpg')}}">
                                         <span class="picker-edit rounded-circle text-gray-500 fs-small" title="{{__('messages.document.attachment')}}">
                                             <label>
                                                 <i class="fa-solid fa-pen" id="profileImageIcon"></i>

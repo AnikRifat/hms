@@ -90,7 +90,7 @@
             <div class="d-block">
                 <div class="image-picker">
                     <div class="image previewImage nursePreviewImage" id="nursePreviewImage"
-                        style="background-image: url({{ isset($user->media[0]) ? $user->image_url : asset('assets/img/avatar.png') }})">
+                        style="background-image: url({{ isset($user->media[0]) ? $user->image_url : asset('public/assets/img/avatar.png') }})">
                     </div>
                     <span class="picker-edit rounded-circle text-gray-500 fs-small"
                         title="{{ __('messages.common.change_profile') }}">

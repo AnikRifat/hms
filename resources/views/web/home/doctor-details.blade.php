@@ -3,7 +3,7 @@
     {{ __('messages.doctor.doctor_details') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/doctors.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/web_front/css/doctors.css') }}"> --}}
 @endsection
 @section('content')
     <!-- start hero section -->
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-lg-end text-center">
-                    <img src="{{ asset('web_front/images/page-banner/Doctors.png') }}" alt="Infy Care" class="img-fluid" />
+                    <img src="{{ asset('public/web_front/images/page-banner/Doctors.png') }}" alt="Infy Care" class="img-fluid" />
                 </div>
             </div>
         </div>

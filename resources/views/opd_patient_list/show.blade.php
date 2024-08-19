@@ -20,7 +20,7 @@
                 {{Form::hidden('visitedOPDPatients',route('patient.opd'),['id'=>'showVisitedOPDPatientsList'])}}
                 {{Form::hidden('patient_id',$opdPatientDepartment->patient_id,['id'=>'showVisitedOPDPatientsListshowVisitedOPDPatientsListshowVisitedOPDPatientsList'])}}
                 {{Form::hidden('opdPatientDepartmentId',$opdPatientDepartment->id,['id'=>'showOpdListPatientDepartmentId'])}}
-                {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'showOpdListDefaultDocumentImageUrl'])}}
+                {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'showOpdListDefaultDocumentImageUrl'])}}
                 {{Form::hidden('opdDiagnosisUrl',route('opd.diagnosis.index'),['id'=>'showOpdListDiagnosisUrl'])}}
                 {{Form::hidden('opdTimelinesUrl',route('opd.timelines.index'),['id'=>'showOpdListTimelinesUrl'])}}
                 {{Form::hidden('downloadDiagnosisDocumentUrl',url('opd-diagnosis-download'),['id'=>'showOpdListDownloadDiagnosisDocUrl'])}}
@@ -37,7 +37,7 @@
     </div>
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ asset('assets/js/custom/custom-datatable.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/custom/custom-datatable.js') }}"></script>--}}
 @endsection
 @section('scripts')
     <script>
@@ -57,15 +57,15 @@
         {{--let visitedOPDPatients = "{{ route('patient.opd') }}";--}}
         {{--let patient_id = "{{ $opdPatientDepartment->patient_id }}";--}}
         {{--let opdPatientDepartmentId = "{{ $opdPatientDepartment->id }}";--}}
-        {{--let defaultDocumentImageUrl = "{{ asset('assets/img/default_image.jpg') }}";--}}
+        {{--let defaultDocumentImageUrl = "{{ asset('public/assets/img/default_image.jpg') }}";--}}
         {{--        let opdDiagnosisUrl = "{{route('opd.diagnosis.index')}}";--}}
         {{--        let downloadDiagnosisDocumentUrl = "{{ url('opd-diagnosis-download')}}";--}}
         {{--        let opdTimelinesUrl = "{{route('opd.timelines.index')}}";--}}
         {{--        let downloadTimelineDocumentUrl = "{{ url('opd-timeline-download') }}";--}}
         {{--        let downloadPaymetDocumentUrl = "{{ url('opdPayment-download') }}";--}}
     </script>
-    {{--    <script src="{{ asset('assets/js/opd_patients_list/visits.js') }}"></script>--}}
-    {{--    <script src="{{ asset('assets/js/opd_patients_list/opd_diagnosis.js') }}"></script>--}}
-    {{--    <script src="{{ asset('assets/js/opd_patients_list/opd_timelines.js') }}"></script>--}}
-    {{--    <script src="{{asset('assets/js/custom/input_price_format.js')}}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/opd_patients_list/visits.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/opd_patients_list/opd_diagnosis.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/opd_patients_list/opd_timelines.js') }}"></script>--}}
+    {{--    <script src="{{asset('public/assets/js/custom/input_price_format.js')}}"></script>--}}
 @endsection

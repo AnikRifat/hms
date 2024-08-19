@@ -36,7 +36,7 @@
                 <div class="d-block">
                     <div class="image-picker">
                         <div class="image previewImage" id="aboutUsPreviewImage"
-                            style="background-image: url({{ $frontSettings['about_us_image'] ? $frontSettings['about_us_image'] : asset('assets/img/default_image.jpg') }})">
+                            style="background-image: url({{ $frontSettings['about_us_image'] ? $frontSettings['about_us_image'] : asset('public/assets/img/default_image.jpg') }})">
                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                 title="{{ __('messages.common.change_profile') }}">
                                 <label>

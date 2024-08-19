@@ -3,7 +3,7 @@
     {{ __('messages.charge_category.charge_category_details')}}
 @endsection
 @section('css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/detail-header.css') }}">--}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/detail-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="d-flex flex-column flex-lg-row">

@@ -3,7 +3,7 @@
     {{ __('messages.web_home.working_hours') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('web_front/css/working-hours.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/web_front/css/working-hours.css') }}">--}}
 @endsection
 @section('content')
 
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <img src="{{ asset('web_front/images/page-banner/working-hours.png') }}" alt="Infy Care" class="img-fluid" />
+                        <img src="{{ asset('public/web_front/images/page-banner/working-hours.png') }}" alt="Infy Care" class="img-fluid" />
                     </div>
                 </div>
             </div>

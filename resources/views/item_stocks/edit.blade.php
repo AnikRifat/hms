@@ -23,7 +23,7 @@
                 {{Form::hidden('itemsUrl',route('items.list'),['id'=>'editStockItemsUrl','class'=>'itemsUrl'])}}
                 {{Form::hidden('itemId',$itemStock->item_id,['id'=>'editStockItemId'])}}
                 {{Form::hidden('isEdit',true,['class'=>'isEdit'])}}
-                {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'editStockDefaultDocumentImageUrl'])}}
+                {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'editStockDefaultDocumentImageUrl'])}}
                 <div class="card-body p-12">
                     {{ Form::model($itemStock, ['route' => ['item.stock.update', $itemStock->id], 'method' => 'post','id' => 'editItemStockForm', 'files' => 'true']) }}
 

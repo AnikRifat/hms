@@ -7,7 +7,7 @@
 @endsection
 
 @section('css')
-{{--    <link href="{{ asset('assets/css/timeline.css') }}" rel="stylesheet" type="text/css"/>--}}
+{{--    <link href="{{ asset('public/assets/css/timeline.css') }}" rel="stylesheet" type="text/css"/>--}}
 @endsection
 
 @section('header_toolbar')
@@ -26,7 +26,7 @@
         <div class="d-flex flex-column">
             <div class="row">
                 {{Form::hidden('ipdPrescriptionUrl',route('ipd.prescription.index'),['id'=>'showListIpdPrescriptionUrl'])}}
-                {{Form::hidden('bootStrapUrl',asset('assets/css/bootstrap.min.css'),['id'=>'showListBootstrapUrl'])}}
+                {{Form::hidden('bootStrapUrl',asset('public/assets/css/bootstrap.min.css'),['id'=>'showListBootstrapUrl'])}}
                 {{Form::hidden('ipdPatientDepartmentId',$ipdPatientDepartment->id,['id'=>'showListIpdPatientDepartmentId'])}}
                 {{Form::hidden('ipdTimelinesUrl',route('ipd.timelines.index'),['id'=>'showListIpdTimelinesUrl'])}}
                 {{Form::hidden('ipdStripePaymentUrl',url('stripe-charge'),['id'=>'showListIpdStripePaymentUrl'])}}

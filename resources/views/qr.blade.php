@@ -2,7 +2,7 @@
 <head>
 {{--    <script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js"></script>--}}
 {{--    <script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/dist/html5-qrcode.min.js"></script>--}}
-    <script src="{{asset('js-sample/qr.min.js')}}"></script>
+    <script src="{{asset('public/js-sample/qr.min.js')}}"></script>
 
 </head>
 
@@ -14,7 +14,7 @@
     function onScanSuccess(decodedText, decodedResult) {
         // Handle on success condition with the decoded text or result.
         console.log(`Scan result: ${decodedText}`, decodedResult);
-        
+
         alert(JSON.stringify(decodedResult));
     }
 

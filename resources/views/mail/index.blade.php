@@ -3,19 +3,19 @@
     {{ __('messages.mail') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">
         <div class="d-flex flex-column">
             <div class="row">
                 <div class="col-12">
-                    @include('flash::message')  
+                    @include('flash::message')
                     @include('layouts.errors')
                 </div>
             </div>
             <div class="card">
-                {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['class'=>'defaultDocumentImageUrl'])}}
+                {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['class'=>'defaultDocumentImageUrl'])}}
                 <div class="card-body">
                     {{ Form::open(['route' => 'mail.send', 'files' => 'true']) }}
                     @include('mail.fields')

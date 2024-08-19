@@ -9,7 +9,7 @@
             {{ Form::hidden('visitorUrl',true, ['id' => 'indexOfVisitor']) }}
             {{ Form::hidden('visitorUrl', route('visitors.index'), ['class' => 'visitorUrl']) }}
             {{ Form::hidden('downloadDocumentUrl', url('visitors-download'), ['class' => 'downloadDocumentUrl']) }}
-            {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+            {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
             {{ Form::hidden('isEdit', true, ['class' => 'isEdit']) }}
             {{ Form::hidden('visitor', __('messages.visitor.visitor'), ['id' => 'Visitor']) }}
             <livewire:visitor-table/>

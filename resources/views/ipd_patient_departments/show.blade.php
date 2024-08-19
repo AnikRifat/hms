@@ -7,7 +7,7 @@
 @endsection
 
 @section('css')
-{{--    <link href="{{ asset('assets/css/timeline.css') }}" rel="stylesheet" type="text/css"/>--}}
+{{--    <link href="{{ asset('public/assets/css/timeline.css') }}" rel="stylesheet" type="text/css"/>--}}
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">
@@ -33,7 +33,7 @@
     {{Form::hidden('ipdChargesUrl',route('ipd.charge.index'),['id'=>'showIpdChargesUrl'])}}
 
     {{Form::hidden('ipdChargesCreateUrl',route('ipd.charge.store'),['id'=>'showIpdChargesCreateUrl'])}}
-    {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'showDefaultDocumentImageUrl', 'class' => 'showDefaultDocumentImageUrl'])}}
+    {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'showDefaultDocumentImageUrl', 'class' => 'showDefaultDocumentImageUrl'])}}
     {{Form::hidden('ipdPatientDepartmentId',$ipdPatientDepartment->id,['id'=>'showIpdPatientDepartmentId'])}}
     {{Form::hidden('ipdPatientCaseDate',$ipdPatientDepartment->patientCase ? $ipdPatientDepartment->patientCase->date : '',['id'=>'showIpdPatientCaseDate'])}}
     {{Form::hidden('doctorUrl',url('doctors'),['id'=>'showIpdDoctorUrl'])}}
@@ -65,7 +65,7 @@
     {{Form::hidden('downloadPaymentDocumentUrl',url('ipd-payment-download'),['id'=>'showIpdDownloadPaymentDocumentUrl'])}}
     {{Form::hidden('downloadTimelineDocumentUrl',url('ipd-timeline-download'),['id'=>'showIpdDownloadTimelineDocumentUrl'])}}
     {{Form::hidden('isEditBill',($ipdPatientDepartment->bill)?1:'',['id'=>'showIsEditBill'])}}
-    {{Form::hidden('bootstrapUrl',asset('assets/css/bootstrap.min.css'),['id'=>'showIpdBootstrapUrl'])}}
+    {{Form::hidden('bootstrapUrl',asset('public/assets/css/bootstrap.min.css'),['id'=>'showIpdBootstrapUrl'])}}
     {{Form::hidden('billStatus',$ipdPatientDepartment->bill_status,['id'=>'showIpdBillStatus'])}}
     {{Form::hidden('ipdActionVisible',($ipdPatientDepartment->bill_status) ? false : true,['id'=>'showIpdActionVisible'])}}
 
@@ -121,7 +121,7 @@
     </div>
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/moment.min.js') }}"></script>--}}
 @endsection
 @section('scripts')
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>

@@ -460,7 +460,7 @@ window.avoidSpace = function (event) {
         return false;
     }
 };
-let defaultAvatarImageUrl = "asset('assets/img/avatar.png')";
+let defaultAvatarImageUrl = "asset('public/assets/img/avatar.png')";
 window.defaultImagePreview = function (imagePreviewSelector, id = null) {
     if (id == 1) {
         $(imagePreviewSelector).css(

@@ -3,7 +3,7 @@
     {{ __('messages.appointments') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/appointment.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/web_front/css/appointment.css') }}"> --}}
 @endsection
 @section('content')
     @php
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <img src="{{ asset('web_front/images/page-banner/make-appointment.png') }}" alt="Infy Care"
+                        <img src="{{ asset('public/web_front/images/page-banner/make-appointment.png') }}" alt="Infy Care"
                             class="img-fluid" />
                     </div>
                 </div>
@@ -151,10 +151,10 @@
     </div>
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ asset('assets/js/custom/custom.js') }}"></script> --}}
-    {{--    <script src="{{ asset('assets/js/custom/helpers.js') }}"></script> --}}
-    <script src="{{ asset('backend/js/moment-round/moment-round.js') }}"></script>
-    {{--        <script src="{{asset('assets/js/web/appointment.js')}}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/custom/custom.js') }}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/custom/helpers.js') }}"></script> --}}
+    <script src="{{ asset('public/backend/js/moment-round/moment-round.js') }}"></script>
+    {{--        <script src="{{asset('public/assets/js/web/appointment.js')}}"></script> --}}
 @endsection
 @section('scripts')
     <script src="https://js.stripe.com/v3/"></script>

@@ -105,7 +105,7 @@
             <div class="d-block">
                 <div class="image-picker">
                     <div class="image previewImage" id="editPatientPreviewImage"
-                         style="background-image: url({{ isset($patient->patientUser->media[0]) ? $patient->patientUser->image_url : asset('assets/img/avatar.png') }})">
+                         style="background-image: url({{ isset($patient->patientUser->media[0]) ? $patient->patientUser->image_url : asset('public/assets/img/avatar.png') }})">
                         <span class="picker-edit rounded-circle text-gray-500 fs-small" title="{{ __('messages.common.profile') }}">
                             <label>
                                 <i class="fa-solid fa-pen" id="profileImageIcon"></i>

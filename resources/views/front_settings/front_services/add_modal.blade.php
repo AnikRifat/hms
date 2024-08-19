@@ -33,7 +33,7 @@
 
                                 <div class="image-picker">
                                     <div class="image previewImage" id="frontServicePreviewImage"
-                                    {{$style}}"{{$background}} url({{ asset('web_front/images/services/medicine.png')}}
+                                    {{$style}}"{{$background}} url({{ asset('public/web_front/images/services/medicine.png')}}
                                     ">
                                         <span class="picker-edit rounded-circle text-gray-500 fs-small" title="{{ __('messages.icon') }}">
                                             <label>

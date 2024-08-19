@@ -3,7 +3,7 @@
     {{ __('messages.contact_us') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/contact.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/web_front/css/contact.css') }}"> --}}
 @endsection
 @php
     $enquiry = request()->query('enquiry');
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <img src="{{ asset('web_front/images/page-banner/Contact.png') }}" alt="Infy Care"
+                        <img src="{{ asset('public/web_front/images/page-banner/Contact.png') }}" alt="Infy Care"
                             class="img-fluid" />
                     </div>
                 </div>
@@ -228,9 +228,9 @@
 @endsection
 @section('page_scripts')
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    {{--    <script src="{{ asset('assets/js/int-tel/js/intlTelInput.min.js') }}"></script> --}}
-    {{--    <script src="{{ asset('assets/js/int-tel/js/utils.min.js') }}"></script> --}}
-    {{--    <script src="{{ asset('assets/js/custom/phone-number-country-code.js') }}"></script> --}}
-    {{--    <script src="{{ asset('assets/js/custom/custom.js') }}"></script> --}}
-    {{--    <script src="{{ asset('assets/js/front_settings/contact_us.js') }}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/int-tel/js/intlTelInput.min.js') }}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/int-tel/js/utils.min.js') }}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/custom/phone-number-country-code.js') }}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/custom/custom.js') }}"></script> --}}
+    {{--    <script src="{{ asset('public/assets/js/front_settings/contact_us.js') }}"></script> --}}
 @endsection

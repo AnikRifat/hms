@@ -14,44 +14,44 @@
     @endphp
     <link rel="icon" href="{{ $settingValue['favicon']['value'] }}" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-    <link href="{{ asset('assets/css/third-party.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/assets/css/third-party.css') }}" rel="stylesheet" type="text/css" />
     @if (getLoggedInUser()->thememode)
-        <link href="{{ asset('assets/css/style.dark.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/plugins.dark.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/phone-number-dark.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('public/assets/css/style.dark.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('public/assets/css/plugins.dark.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('public/assets/css/phone-number-dark.css') }}" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     @else
-        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('public/assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
     @endif
 
     {{--    @livewireStyles --}}
-    {{--    <script src="{{ asset('livewire/livewire.css') }}"></script> --}}
+    {{--    <script src="{{ asset('public/livewire/livewire.css') }}"></script> --}}
     @yield('css')
     @yield('page_css')
     @livewireStyles
-    {{--    <link href="{{ asset('css/pages.css') }}" rel="stylesheet" type="text/css"/> --}}
-    <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet" type="text/css" />
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/livewire-table.css') }}"> --}}
+    {{--    <link href="{{ asset('public/css/pages.css') }}" rel="stylesheet" type="text/css"/> --}}
+    <link href="{{ asset('public/assets/css/custom.css') }}" rel="stylesheet" type="text/css" />
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/livewire-table.css') }}"> --}}
     @routes
     @livewireScripts
-    {{-- <script src="{{ asset('vendor/livewire/livewire.js') }}"></script> --}}
-    {{-- <script src="{{ asset('vendor/livewire/livewire.js') }}"></script> --}}
+    {{-- <script src="{{ asset('public/vendor/livewire/livewire.js') }}"></script> --}}
+    {{-- <script src="{{ asset('public/vendor/livewire/livewire.js') }}"></script> --}}
     {{-- @include('livewire.livewire-turbo') --}}
-    {{-- <script src="{{ asset('assets/js/livewire-turbo.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
-    {{-- <script src="{{ asset('js/turbo.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
+    {{-- <script src="{{ asset('public/assets/js/livewire-turbo.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
+    {{-- <script src="{{ asset('public/js/turbo.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
         data-turbolinks-eval="false" data-turbo-eval="false"></script>
-    <script src="{{ asset('assets/js/third-party.js') }}"></script>
-    <script src="{{ asset('messages.js') }}"></script>
-    <script src="{{ asset('js/pages.js') }}"></script>
+    <script src="{{ asset('public/assets/js/third-party.js') }}"></script>
+    <script src="{{ asset('public/messages.js') }}"></script>
+    <script src="{{ asset('public/js/pages.js') }}"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="https://npmcdn.com/flatpickr@4.5.2/dist/l10n"></script>
     <script src="https://npmcdn.com/flatpickr@4.5.2/dist/l10n"></script>
     @yield('page_scripts')
     <script>
-        {{-- let defaultImage = "{{ asset('assets/img/avatar.png') }}"; --}}
+        {{-- let defaultImage = "{{ asset('public/assets/img/avatar.png') }}"; --}}
             // const defaultImageUrl = '';
             (function($) {
                 $.fn.button = function(action) {
@@ -99,7 +99,7 @@
             @include('user_profile.change_password_modal')
             @include('generate_patient_id_card.show')
         </div>
-        {{ Form::hidden('defaultImage', asset('assets/img/avatar.png'), ['class' => 'defaultImage']) }}
+        {{ Form::hidden('defaultImage', asset('public/assets/img/avatar.png'), ['class' => 'defaultImage']) }}
         {{ Form::hidden('defaultImageUrl', '', ['class' => 'defaultImageUrl']) }}
         {{ Form::hidden('profileUrl', url('profile'), ['class' => 'profileUrl']) }}
         {{ Form::hidden('profileUpdateUrl', url('profile-update'), ['class' => 'profileUpdateUrl']) }}
@@ -116,7 +116,7 @@
         {{ Form::hidden('videoDocumentImageUrl', url('assets/img/video.png'), ['class' => 'videoDocumentImageUrl']) }}
         {{ Form::hidden('ajaxCallIsRunning', false, ['class' => 'ajaxCallIsRunning']) }}
         {{ Form::hidden('userCurrentLanguage', getLoggedInUser()->language, ['class' => 'userCurrentLanguage']) }}
-        {{ Form::hidden('sweetAlertIcon', asset('assets/images/remove.png'), ['class' => 'sweetAlertIcon']) }}
+        {{ Form::hidden('sweetAlertIcon', asset('public/assets/images/remove.png'), ['class' => 'sweetAlertIcon']) }}
         {{ Form::hidden('deleteVariable', __('messages.common.delete'), ['class' => 'deleteVariable']) }}
         {{ Form::hidden('yesVariable', __('messages.common.yes'), ['class' => 'yesVariable']) }}
         {{ Form::hidden('noVariable', __('messages.common.no'), ['class' => 'noVariable']) }}

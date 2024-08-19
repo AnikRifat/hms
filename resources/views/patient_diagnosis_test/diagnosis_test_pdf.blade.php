@@ -3,9 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="icon" href="{{ asset('web/img/logo.jpg') }}" type="image/png">
+    <link rel="icon" href="{{ asset('public/web/img/logo.jpg') }}" type="image/png">
     <title>{{ __('messages.patient_diagnosis_test.patient_diagnosis_test') }} {{ __('messages.reports') }}</title>
-    <link href="{{ asset('assets/css/diagnosis-test-pdf.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/assets/css/diagnosis-test-pdf.css') }}" rel="stylesheet" type="text/css" />
     <style>
         body {
             font-family: DejaVu Sans, Arial, "Helvetica", Arial, "Liberation Sans", sans-serif;

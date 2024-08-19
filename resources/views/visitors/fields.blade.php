@@ -66,12 +66,12 @@
                         <div class="image previewImage" id="visitorPreviewImage"
                             {{ $style }}"{{ $background }} url(
                             @if ($isEdit) @if ($fileExt == 'pdf')
-                                {{ asset('assets/img/pdf.png') }}
+                                {{ asset('public/assets/img/pdf.png') }}
                             @elseif($fileExt == 'doc' || $fileExt == 'docx')
-                                {{ asset('assets/img/doc.png') }}
+                                {{ asset('public/assets/img/doc.png') }}
                             @else
-                                {{ empty($visitor->document_url) ? asset('assets/img/default_image.jpg') : $visitor->document_url }} @endif
-                        @else {{ asset('assets/img/default_image.jpg') }} @endif)">
+                                {{ empty($visitor->document_url) ? asset('public/assets/img/default_image.jpg') : $visitor->document_url }} @endif
+                        @else {{ asset('public/assets/img/default_image.jpg') }} @endif)">
                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                 title="{{ $isEdit ? __('messages.common.change_profile') : __('messages.incomes.attachment') }}">
                                 <label>

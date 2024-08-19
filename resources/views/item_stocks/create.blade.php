@@ -22,7 +22,7 @@
             <div class="card">
                 {{Form::hidden('itemsUrl',route('items.list'),['id'=>'createStockItemsUrl','class'=>'itemsUrl'])}}
                 {{Form::hidden('isEdit',false,['class'=>'isEdit'])}}
-                {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'createStockDefaultDocumentImageUrl'])}}
+                {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'createStockDefaultDocumentImageUrl'])}}
 
                 <div class="card-body p-12">
                     {{ Form::open(['route' => 'item.stock.store', 'id' => 'createItemStockForm', 'files' => 'true']) }}

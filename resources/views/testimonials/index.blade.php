@@ -9,7 +9,7 @@
             {{Form::hidden('testimonialUrl',route('testimonials.index'),['id'=>'indexTestimonialUrl'])}}
             {{Form::hidden('testimonialCreateUrl',route('testimonials.store'),['id'=>'indexTestimonialCreateUrl'])}}
             {{Form::hidden('profileError',__('messages.testimonial.profile_error'),['id'=>'indexTestimonialProfileError'])}}
-            {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'indexTestimonialDefaultDocumentImageUrl'])}}
+            {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'indexTestimonialDefaultDocumentImageUrl'])}}
             {{ Form::hidden('testimonial', __('messages.testimonial.testimonial'), ['id' => 'Testimonial']) }}
             <livewire:testimonial-table/>
             @include('testimonials.add_modal')

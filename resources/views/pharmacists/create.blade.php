@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div class="card">
-                {{Form::hidden('utilsScript',asset('assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
+                {{Form::hidden('utilsScript',asset('public/assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
                 {{Form::hidden('isEdit',false,['class'=>'isEdit'])}}
-                {{Form::hidden('defaultAvatarImageUrl',asset('assets/img/avatar.png'),['class'=>'defaultAvatarImageUrl'])}}
+                {{Form::hidden('defaultAvatarImageUrl',asset('public/assets/img/avatar.png'),['class'=>'defaultAvatarImageUrl'])}}
                 <div class="card-body">
                     {{ Form::open(['route' => 'pharmacists.store', 'files' => 'true', 'id' => 'createPharmacistForm']) }}
                         @include('pharmacists.fields')
@@ -32,8 +32,8 @@
         </div>
     </div>
 @endsection
-{{-- 
+{{--
     JS File :- assets/js/pharmacists/create-edit.js
                assets/js/custom/add-edit-profile-picture.js
-               assets/js/custom/phone-number-country-code.js   
+               assets/js/custom/phone-number-country-code.js
 --}}

@@ -3,7 +3,7 @@
     {{ __('messages.web_home.testimonials') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('web_front/css/testimonials.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/web_front/css/testimonials.css') }}">--}}
 @endsection
 @section('content')
     <div class="home-page">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <img src="{{ asset('web_front/images/page-banner/Testimonials.png') }}" alt="Infy Care" class="img-fluid" />
+                        <img src="{{ asset('public/web_front/images/page-banner/Testimonials.png') }}" alt="Infy Care" class="img-fluid" />
                     </div>
                 </div>
             </div>

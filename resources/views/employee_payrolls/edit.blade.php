@@ -40,7 +40,7 @@
     </script>
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ asset('assets/js/custom/input_price_format.js') }}"></script>--}}
-    {{--    <script src="{{ asset('assets/js/employee_payrolls/edit.js') }}"></script>--}}
-    {{--    <script src="{{ asset('assets/js/employee_payrolls/payrolls.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/custom/input_price_format.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/employee_payrolls/edit.js') }}"></script>--}}
+    {{--    <script src="{{ asset('public/assets/js/employee_payrolls/payrolls.js') }}"></script>--}}
 @endsection

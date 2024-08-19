@@ -37,7 +37,7 @@
             <div class="d-block">
                 <div class="image-picker">
                     <div class="image previewImage" id="editInvestigationPreviewImage"
-                        style="background-image: url('{{ $investigationReport->attachment_url ?? asset('assets/img/default_image.jpg') }}')">
+                        style="background-image: url('{{ $investigationReport->attachment_url ?? asset('public/assets/img/default_image.jpg') }}')">
                         <span class="picker-edit rounded-circle text-gray-500 fs-small"
                             title="{{ __('messages.investigation_report.attachment') }}">
                             <label>

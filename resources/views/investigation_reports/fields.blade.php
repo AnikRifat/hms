@@ -42,7 +42,7 @@
 
                 <div class="image-picker">
                     <div class="image previewImage" id="investigationPreviewImage"
-                        {{ $style }}"{{ $background }} url({{ asset('assets/img/default_image.png') }}">
+                        {{ $style }}"{{ $background }} url({{ asset('public/assets/img/default_image.png') }}">
                         <span class="picker-edit rounded-circle text-gray-500 fs-small"
                             title="{{ __('messages.investigation_report.attachment') }}">
                             <label>

@@ -13,7 +13,7 @@
         @include('expenses.edit_modal')
         {{Form::hidden('expenseUrl',url('expenses'),['id'=>'indexExpenseUrl'])}}
         {{Form::hidden('expenseCreateUrl',route('expenses.store'),['id'=>'indexExpenseCreateUrl'])}}
-        {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'indexExpenseDefaultDocumentImageUrl'])}}
+        {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'indexExpenseDefaultDocumentImageUrl'])}}
         {{Form::hidden('expenseHeadArray',json_encode($expenseHeads),['id'=>'indexExpenseHeadArray'])}}
         {{Form::hidden('download',__('messages.expense.download'),['id'=>'indexExpenseDownload'])}}
         {{Form::hidden('documentError',__('messages.expense.document_error'),['id'=>'indexExpenseDocumentError'])}}

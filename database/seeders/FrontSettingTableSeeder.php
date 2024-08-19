@@ -15,7 +15,7 @@ class FrontSettingTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $imageUrl = asset('assets/img/default_image.jpg');
+        $imageUrl = asset('public/assets/img/default_image.jpg');
         FrontSetting::create([
             'key' => 'about_us_title',
             'value' => 'About For HMS',

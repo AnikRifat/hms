@@ -3,9 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="icon" href="{{ asset('web/img/hms-saas-favicon.ico') }}" type="image/png">
+    <link rel="icon" href="{{ asset('public/web/img/hms-saas-favicon.ico') }}" type="image/png">
     <title>{{ __('messages.ipd_patient.discharge_slip') }}</title>
-    <link href="{{ asset('assets/css/bill-pdf.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/assets/css/bill-pdf.css') }}" rel="stylesheet" type="text/css" />
     @if (getCurrentCurrency() == 'inr')
         <style>
             body {

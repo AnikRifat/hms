@@ -22,7 +22,7 @@
                         <div class="d-block">
                             <div class="image-picker">
                                 <div class="image previewImage" id="homePreviewImage"
-                                    style="background-image: url({{ $frontSettings['home_page_image'] ? $frontSettings['home_page_image'] : asset('web_front/images/main-banner/banner-one/woman-doctor.png') }})">
+                                    style="background-image: url({{ $frontSettings['home_page_image'] ? $frontSettings['home_page_image'] : asset('public/web_front/images/main-banner/banner-one/woman-doctor.png') }})">
                                     <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                         title="{{ __('messages.common.change_profile') }}">
                                         <label>
@@ -46,7 +46,7 @@
                         <div class="d-block">
                             <div class="image-picker">
                                 <div class="image previewImage" id="homeDoctorPreviewImage"
-                                    style="background-image: url({{ $frontSettings['home_page_certified_doctor_image'] ? $frontSettings['home_page_certified_doctor_image'] : asset('web_front/images/healthcare-doctor/doctor-1.png') }})">
+                                    style="background-image: url({{ $frontSettings['home_page_certified_doctor_image'] ? $frontSettings['home_page_certified_doctor_image'] : asset('public/web_front/images/healthcare-doctor/doctor-1.png') }})">
                                     <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                         title="{{ __('messages.common.change_profile') }}">
                                         <label>

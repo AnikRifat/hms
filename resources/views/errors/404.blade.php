@@ -12,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>404 Not Found | {{ config('app.name') }}</title>
-    <link rel="stylesheet" href="{{ asset('web_front/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web_front/css/bootstrap.css') }}">
     @yield('page_css')
 </head>
 <body>
     <div class="container con-404 vh-100 d-flex justify-content-center">
         <div class="row justify-content-md-center d-block">
             <div class="col-md-12 mt-5">
-                <img src="{{ asset('web/img/404.svg') }}" class="img-fluid img-404 mx-auto d-block">
+                <img src="{{ asset('public/web/img/404.svg') }}" class="img-fluid img-404 mx-auto d-block">
             </div>
             <div class="col-md-12 text-center error-page-404">
                 <h2>Opps! Something's missing...</h2>

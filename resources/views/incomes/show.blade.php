@@ -30,7 +30,7 @@
     </div>
     @include('incomes.edit_modal')
     {{Form::hidden('incomeUrl',url('incomes'),['id'=>'showIncomeUrl'])}}
-    {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'showIncomeDefaultDocumentImageUrl'])}}
+    {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'showIncomeDefaultDocumentImageUrl'])}}
     {{Form::hidden('download',__('messages.incomes.download'),['id'=>'showIncomeDownload'])}}
     {{Form::hidden('documentError',__('messages.incomes.document_error'),['id'=>'showIncomeDocumentError'])}}
 @endsection

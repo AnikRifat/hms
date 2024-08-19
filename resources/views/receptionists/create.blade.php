@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div class="card">
-                {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+                {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
                 {{ Form::hidden('isEdit', false, ['class' => 'isEdit']) }}
-                {{ Form::hidden('defaultAvatarImageUrl', asset('assets/img/avatar.png'), ['class' => 'defaultAvatarImageUrl']) }}
+                {{ Form::hidden('defaultAvatarImageUrl', asset('public/assets/img/avatar.png'), ['class' => 'defaultAvatarImageUrl']) }}
                 <div class="card-body p-12">
                     {{ Form::open(['route' => 'receptionists.store', 'files' => 'true', 'id' => 'createReceptionForm']) }}
 

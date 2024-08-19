@@ -58,7 +58,7 @@
 
                     <div class="image-picker">
                         <div class="image previewImage" id="stockPreviewImage" {{ $style }}"{{ $background }}
-                            url({{ asset('assets/img/default_image.jpg') }}">
+                            url({{ asset('public/assets/img/default_image.jpg') }}">
                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                 title="{{ __('messages.document.attachment') }}">
                                 <label>

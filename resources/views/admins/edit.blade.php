@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="card">
-                {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+                {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
                 {{ Form::hidden('isEdit', true, ['class' => 'isEdit']) }}
                 <div class="card-body p-12">
                     {!! Form::model($admin, ['route' => ['admins.update', $admin->id], 'method' => 'patch', 'files' => 'true', 'id' => 'editAdminForm']) !!}

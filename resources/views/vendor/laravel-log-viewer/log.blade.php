@@ -7,12 +7,12 @@
     <title>HMS Log Viewer | {{getAppName()}}</title>
     <meta name="description" content="Hospital management system">
     <meta name="keyword" content="hospital,doctor,patient,fever,MD,MS,MBBS">
-    <link href="{{ asset('css/pages.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/css/pages.css') }}" rel="stylesheet" type="text/css"/>
     <link rel="canonical" href="{{ route('front') }}"/>
-    <link rel="stylesheet" href="{{ asset('favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('public/favicon.ico') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
-    {{--    <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css"/>--}}
-    {{--    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css"/>--}}
+    {{--    <link href="{{ asset('public/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css"/>--}}
+    {{--    <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet" type="text/css"/>--}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
     <style>
         body {
@@ -147,7 +147,7 @@
         }
 
     </style>
-    <script src="{{ asset('backend/js/vendor.js') }}"></script>
+    <script src="{{ asset('public/backend/js/vendor.js') }}"></script>
     <script>
         function initTheme () {
             const darkThemeSelected =
@@ -290,9 +290,9 @@
     </div>
 </div>
 <!-- jQuery for Bootstrap -->
-{{--<script src="{{ asset('assets/js/jquery.min.js') }}"></script>--}}
-{{--<script src="{{ asset('assets/js/popper.min.js') }}"></script>--}}
-{{--<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>--}}
+{{--<script src="{{ asset('public/assets/js/jquery.min.js') }}"></script>--}}
+{{--<script src="{{ asset('public/assets/js/popper.min.js') }}"></script>--}}
+{{--<script src="{{ asset('public/assets/js/bootstrap.min.js') }}"></script>--}}
 <!-- FontAwesome -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <!-- Datatables -->
@@ -305,7 +305,7 @@
     const darkSwitch = document.getElementById('darkSwitch')
 
     // this is here so we can get the body dark mode before the page displays
-    // otherwise the page will be white for a second... 
+    // otherwise the page will be white for a second...
     initTheme();
 
     window.addEventListener('load', () => {

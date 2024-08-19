@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <img src="{{ !empty($frontSetting['home_page_image']) ? $frontSetting['home_page_image'] : asset('web_front/images/main-banner/banner-one/Home.png') }}"
+                        <img src="{{ !empty($frontSetting['home_page_image']) ? $frontSetting['home_page_image'] : asset('public/web_front/images/main-banner/banner-one/Home.png') }}"
                              alt="Infy Care" class="img-fluid"/>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                         @foreach($frontServices  as $frontService)
                             <div class="col-xl-3 col-lg-4 col-md-6 py-lg-2 card-hover d-flex align-items-stretch">
                                 <div class="card p-c-4 my-lg-2 mx-lg-1 my-md-3 my-2 flex-fill">
-                                    <img src="{{ isset($frontService->icon_url) ? $frontService->icon_url : asset('web_front/images/services/medicine.png') }}"
+                                    <img src="{{ isset($frontService->icon_url) ? $frontService->icon_url : asset('public/web_front/images/services/medicine.png') }}"
                                          class="card-img-top img-wh mx-auto " alt="Cardiology">
                                     <div class="card-body p-0 text-center flex-column">
                                         <h4 class="card-title mt-4">{{ \Illuminate\Support\Str::limit($frontService->name, 16) }}</h4>

@@ -23,7 +23,7 @@
                 <div class="card-body p-12">
                     {{ Form::hidden('id', null,['id' => 'editCallLogId']) }}
                     {{ Form::hidden('isEdit', true, ['class' => 'isEdit']) }}
-                    {{ Form::hidden('utilsScript', asset('assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
+                    {{ Form::hidden('utilsScript', asset('public/assets/js/int-tel/js/utils.min.js'), ['class' => 'utilsScript']) }}
                     {{ Form::model($callLog, ['route' => ['call_logs.update', $callLog->id], 'method' => 'patch', 'id' => 'editCallLogForm']) }}
                     @include('call_logs.edit_field')
 

@@ -75,7 +75,7 @@
             <div class="col-md-2 col-sm-6 col-6 preview-image-video-container pl-0 mt-1">
                 <img id='settingPreviewImage'
                      class="img-thumbnail thumbnail-preview settingThumbnailPreview image-stretching"
-                     src="{{ ($settings['app_logo']) ? $settings['app_logo'] : asset('assets/img/default_image.jpg') }}"/>
+                     src="{{ ($settings['app_logo']) ? $settings['app_logo'] : asset('public/assets/img/default_image.jpg') }}"/>
             </div>
         </div>
     </div>

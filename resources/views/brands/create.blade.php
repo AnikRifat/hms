@@ -3,7 +3,7 @@
     {{ __('messages.medicine.medicine_brands') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/int-tel/css/intlTelInput.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/int-tel/css/intlTelInput.css') }}">--}}
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="card">
-                {{Form::hidden('utilsScript',asset('assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
+                {{Form::hidden('utilsScript',asset('public/assets/js/int-tel/js/utils.min.js'),['class'=>'utilsScript'])}}
                 {{Form::hidden('isEdit',false,['class'=>'isEdit'])}}
 
                 <div class="card-body">

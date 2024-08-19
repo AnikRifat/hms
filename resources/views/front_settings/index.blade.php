@@ -3,7 +3,7 @@
     {{ __('messages.front_settings') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -28,7 +28,7 @@
                         {{Form::hidden('isEdit',true,['class'=>'isEdit'])}}
                         {{Form::hidden('moduleUrl',route('module.index'),['id'=>'frontModuleUrl'])}}
                         {{Form::hidden('imageValidation',__('messages.setting.image_validation'),['id'=>'frontSettingImageValidation'])}}
-                        {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'frontSettingDefaultDocumentImageUrl'])}}
+                        {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'frontSettingDefaultDocumentImageUrl'])}}
                     </div>
                 </div>
             @endif

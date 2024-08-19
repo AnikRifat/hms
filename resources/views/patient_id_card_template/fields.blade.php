@@ -123,7 +123,7 @@
                             <div class="user-profile pb-5 ms-3">
                                 <a>
                                     <div>
-                                        <img src="{{ asset('/assets/img/avatar.png') }}" alt=""
+                                        <img src="{{ asset('public//assets/img/avatar.png') }}" alt=""
                                             id="card_profilePicture" width="110px"
                                             class="user-img rounded-circle image">
                                     </div>

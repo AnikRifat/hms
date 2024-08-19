@@ -3,11 +3,11 @@
     {{ __('messages.dashboard.dashboard') }}
 @endsection
 @section('page_css')
-    {{--        <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.css') }}"> --}}
-    {{--        <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css') }}"> --}}
+    {{--        <link rel="stylesheet" href="{{ asset('public/css/bootstrap-datetimepicker.css') }}"> --}}
+    {{--        <link rel="stylesheet" href="{{ asset('public/assets/css/daterangepicker.css') }}"> --}}
 @endsection
 @section('css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/detail-header.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('public/assets/css/detail-header.css') }}"> --}}
 @endsection
 
 @section('content')

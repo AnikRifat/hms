@@ -45,7 +45,7 @@
                             ?>
                             <div class="image-picker">
                                 <div class="image previewImage" id="incomePreviewImage"
-                                {{$style}}"{{$background}} url('{{ asset('assets/img/default_image.jpg') }}')">
+                                {{$style}}"{{$background}} url('{{ asset('public/assets/img/default_image.jpg') }}')">
                             </div>
                             <span class="picker-edit rounded-circle text-gray-500 fs-small"
                                   title="{{ __('messages.incomes.attachment') }}">

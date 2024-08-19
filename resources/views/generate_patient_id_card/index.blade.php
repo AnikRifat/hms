@@ -3,7 +3,7 @@
     {{ __('messages.patient_id_card.generate_patient_id_card') }}
 @endsection
 @section('css')
-    <link rel="stylesheet" href="{{ asset('assets/css/patient-id-card.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/patient-id-card.css') }}">
 @endsection
 @section('content')
     <div class="container-fluid">

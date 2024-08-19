@@ -3,7 +3,7 @@
     {{ __('messages.postal_receive') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('public/assets/css/sub-header.css') }}">--}}
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -16,7 +16,7 @@
             {{ Form::hidden('ispostal', \App\Models\Postal::POSTAL_RECEIVE, ['class' => 'isPostal']) }}
             {{ Form::hidden('name', __('messages.postal.receive'), ['class' => 'name']) }}
             {{ Form::hidden('postalCreateUrl', route('receives.store'), ['class' => 'postalCreateUrl']) }}
-            {{ Form::hidden('defaultDocumentImageUrl', asset('assets/img/default_image.jpg'), ['class' => 'defaultDocumentImageUrl']) }}
+            {{ Form::hidden('defaultDocumentImageUrl', asset('public/assets/img/default_image.jpg'), ['class' => 'defaultDocumentImageUrl']) }}
             {{ Form::hidden('download', __('messages.expense.download'), ['class' => 'download']) }}
             {{ Form::hidden('documentError', __('messages.expense.document_error'), ['class' => 'documentError']) }}
             {{ Form::hidden('tableName', '#receivesTable', ['class' => 'tableName'] ) }}

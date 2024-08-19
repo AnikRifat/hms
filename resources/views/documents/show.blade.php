@@ -28,7 +28,7 @@
     </div>
     @include('documents.edit_modal')
     {{Form::hidden('documentsUrl',route('documents.index'),['id'=>'showDocumentsUrl','class'=>'documentsUrl'])}}
-    {{Form::hidden('defaultDocumentImageUrl',asset('assets/img/default_image.jpg'),['id'=>'showDefaultDocumentImageUrl','class'=>'defaultDocumentImageUrl'])}}
+    {{Form::hidden('defaultDocumentImageUrl',asset('public/assets/img/default_image.jpg'),['id'=>'showDefaultDocumentImageUrl','class'=>'defaultDocumentImageUrl'])}}
 @endsection
 @section('scripts')
     {{--   assets/js/document/document-details-edit.js --}}

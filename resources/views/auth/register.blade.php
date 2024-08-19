@@ -9,7 +9,7 @@
 @section('content')
     <!--begin::Authentication - Sign-up -->
     @php
-        $style = 'style=background-image:url(' . asset('assets/img/progress-hd.png') . ')';
+        $style = 'style=background-image:url(' . asset('public/assets/img/progress-hd.png') . ')';
         $settingValue = getSettingValue();
         App::setLocale(checkLanguageSession());
     @endphp

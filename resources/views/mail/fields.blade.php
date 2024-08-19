@@ -33,7 +33,7 @@
                 ?>
                     <div class="image-picker">
                         <div class="image previewImage" id="previewImage"
-                        {{$style}}"{{$background}} url({{ asset('assets/img/avatar.png')}}">
+                        {{$style}}"{{$background}} url({{ asset('public/assets/img/avatar.png')}}">
                         <span class="picker-edit rounded-circle text-gray-500 fs-small" title="{{ __('messages.common.profile') }}">
                                     <label>
                                     <i class="fa-solid fa-pen" id="profileImageIcon"></i>

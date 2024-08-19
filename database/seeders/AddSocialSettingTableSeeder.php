@@ -12,7 +12,7 @@ class AddSocialSettingTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $favicon = asset('web/img/favicon.png');
+        $favicon = asset('public/web/img/favicon.png');
 
         Setting::create(['key' => 'favicon', 'value' => $favicon]);
         Setting::create(['key' => 'facebook_url', 'value' => 'https://www.facebook.com/infyom/']);

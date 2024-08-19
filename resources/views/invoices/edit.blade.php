@@ -3,7 +3,7 @@
     {{ __('messages.invoice.edit_invoice') }}
 @endsection
 @section('page_css')
-{{--    <link href="{{ asset('assets/css/bill.css') }}" rel="stylesheet" type="text/css"/>--}}
+{{--    <link href="{{ asset('public/assets/css/bill.css') }}" rel="stylesheet" type="text/css"/>--}}
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">
