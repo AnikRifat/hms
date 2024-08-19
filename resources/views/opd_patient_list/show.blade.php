@@ -37,7 +37,7 @@
     </div>
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ mix('assets/js/custom/custom-datatable.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/custom/custom-datatable.js') }}"></script>--}}
 @endsection
 @section('scripts')
     <script>
@@ -64,8 +64,8 @@
         {{--        let downloadTimelineDocumentUrl = "{{ url('opd-timeline-download') }}";--}}
         {{--        let downloadPaymetDocumentUrl = "{{ url('opdPayment-download') }}";--}}
     </script>
-    {{--    <script src="{{ mix('assets/js/opd_patients_list/visits.js') }}"></script>--}}
-    {{--    <script src="{{ mix('assets/js/opd_patients_list/opd_diagnosis.js') }}"></script>--}}
-    {{--    <script src="{{ mix('assets/js/opd_patients_list/opd_timelines.js') }}"></script>--}}
-    {{--    <script src="{{mix('assets/js/custom/input_price_format.js')}}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/opd_patients_list/visits.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/opd_patients_list/opd_diagnosis.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/opd_patients_list/opd_timelines.js') }}"></script>--}}
+    {{--    <script src="{{asset('assets/js/custom/input_price_format.js')}}"></script>--}}
 @endsection

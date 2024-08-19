@@ -20,7 +20,7 @@
     {{--    <script>--}}
     {{--let brandUrl = "{{url('brands')}}";--}}
     {{--    </script>--}}
-    {{--    <script src="{{ mix('assets/js/brands/brands.js') }}"></script>--}}
-    {{--    <script src="{{ mix('assets/js/custom/delete.js') }}"></script>--}}
-    {{--    <script src="{{ mix('assets/js/custom/custom-datatable.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/brands/brands.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/custom/delete.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/custom/custom-datatable.js') }}"></script>--}}
 @endsection

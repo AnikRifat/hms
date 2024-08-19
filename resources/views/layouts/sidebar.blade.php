@@ -1,4 +1,4 @@
-{{-- <link href="{{ mix('assets/css/style.css') }}" rel="stylesheet" type="text/css"/> --}}
+{{-- <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css"/> --}}
 @php
     $settingValue = getSettingValue();
 @endphp

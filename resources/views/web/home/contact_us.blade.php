@@ -3,7 +3,7 @@
     {{ __('messages.contact_us') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ mix('web_front/css/contact.css') }}"> --}}
+    {{--    <link rel="stylesheet" href="{{ asset('web_front/css/contact.css') }}"> --}}
 @endsection
 @php
     $enquiry = request()->query('enquiry');
@@ -230,7 +230,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
     {{--    <script src="{{ asset('assets/js/int-tel/js/intlTelInput.min.js') }}"></script> --}}
     {{--    <script src="{{ asset('assets/js/int-tel/js/utils.min.js') }}"></script> --}}
-    {{--    <script src="{{ mix('assets/js/custom/phone-number-country-code.js') }}"></script> --}}
-    {{--    <script src="{{ mix('assets/js/custom/custom.js') }}"></script> --}}
-    {{--    <script src="{{ mix('assets/js/front_settings/contact_us.js') }}"></script> --}}
+    {{--    <script src="{{ asset('assets/js/custom/phone-number-country-code.js') }}"></script> --}}
+    {{--    <script src="{{ asset('assets/js/custom/custom.js') }}"></script> --}}
+    {{--    <script src="{{ asset('assets/js/front_settings/contact_us.js') }}"></script> --}}
 @endsection

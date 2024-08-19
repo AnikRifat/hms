@@ -43,6 +43,6 @@
         {{ Form::hidden('departmentUrl', route('departments.index'), ['id' => 'indexDepartmentUrl']) }}
     </div>
 @endsection
-{{--    <script src="{{mix('assets/js/departments/departments.js')}}"></script>--}}
-{{--    <script src="{{ mix('assets/js/custom/reset_models.js') }}"></script>--}}
+{{--    <script src="{{asset('assets/js/departments/departments.js')}}"></script>--}}
+{{--    <script src="{{ asset('assets/js/custom/reset_models.js') }}"></script>--}}
 

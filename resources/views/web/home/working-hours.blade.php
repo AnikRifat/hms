@@ -3,7 +3,7 @@
     {{ __('messages.web_home.working_hours') }}
 @endsection
 @section('page_css')
-{{--    <link rel="stylesheet" href="{{ mix('web_front/css/working-hours.css') }}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('web_front/css/working-hours.css') }}">--}}
 @endsection
 @section('content')
 
@@ -21,7 +21,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-lg-start justify-content-center mb-lg-0 mb-5">
                                     <li class="breadcrumb-item">
-                                        <a href="{{ route('front') }}">{{ __('messages.web_home.home') }}</a>    
+                                        <a href="{{ route('front') }}">{{ __('messages.web_home.home') }}</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">
                                         {{ __('messages.web_home.working_hours') }}

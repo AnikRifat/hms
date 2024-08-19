@@ -35,5 +35,5 @@
     </div>
 @endsection
 @section('scripts')
-{{--    <script src="{{ mix('assets/js/issued_items/create.js') }}"></script>--}}
+{{--    <script src="{{ asset('assets/js/issued_items/create.js') }}"></script>--}}
 @endsection

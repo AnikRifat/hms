@@ -31,7 +31,7 @@
     </div>
 @endsection
 {{-- JS File :-assets/js/settings/setting.js --}}
-            
+
 @section('page_scripts')
     {{--    <script src="{{ asset('assets/js/int-tel/js/intlTelInput.min.js') }}"></script>--}}
     {{--    <script src="{{ asset('assets/js/int-tel/js/utils.min.js') }}"></script>--}}
@@ -44,6 +44,6 @@
         {{--let imageValidation = '{{  __('messages.setting.image_validation') }}';--}}
         // let searchExist = false;
     </script>
-    {{--    <script src="{{ mix('assets/js/settings/setting.js') }}"></script>--}}
-    {{--    <script src="{{ mix('assets/js/custom/phone-number-country-code.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/settings/setting.js') }}"></script>--}}
+    {{--    <script src="{{ asset('assets/js/custom/phone-number-country-code.js') }}"></script>--}}
 @endsection

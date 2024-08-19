@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link href="{{ asset('assets/css/third-party.css') }}" rel="stylesheet" type="text/css" />
     @if (getLoggedInUser()->thememode)
-        <link href="{{ mix('assets/css/style.dark.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ mix('assets/css/plugins.dark.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ mix('assets/css/phone-number-dark.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/style.dark.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/plugins.dark.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/phone-number-dark.css') }}" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     @else
-        <link href="{{ mix('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ mix('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
     @endif
 
     {{--    @livewireStyles --}}
@@ -31,7 +31,7 @@
     @yield('page_css')
     @livewireStyles
     {{--    <link href="{{ asset('css/pages.css') }}" rel="stylesheet" type="text/css"/> --}}
-    <link href="{{ mix('assets/css/custom.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet" type="text/css" />
     {{--    <link rel="stylesheet" href="{{ asset('assets/css/livewire-table.css') }}"> --}}
     @routes
     @livewireScripts
@@ -44,7 +44,7 @@
         data-turbolinks-eval="false" data-turbo-eval="false"></script>
     <script src="{{ asset('assets/js/third-party.js') }}"></script>
     <script src="{{ asset('messages.js') }}"></script>
-    <script src="{{ mix('js/pages.js') }}"></script>
+    <script src="{{ asset('js/pages.js') }}"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="https://npmcdn.com/flatpickr@4.5.2/dist/l10n"></script>
