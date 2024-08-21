@@ -12,16 +12,16 @@ class SettingsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $imageUrl = ('web/img/logo.jpg');
+        $imageUrl = ('web/img/logo.-dhcjpg');
 
-        Setting::create(['key' => 'app_name', 'value' => 'HMS']);
+        Setting::create(['key' => 'app_name', 'value' => 'DHC']);
         Setting::create(['key' => 'app_logo', 'value' => $imageUrl]);
-        Setting::create(['key' => 'company_name', 'value' => 'InfyOmLabs']);
-        Setting::create(['key' => 'current_currency', 'value' => 'inr']);
-        Setting::create(['key' => 'hospital_address', 'value' => '16/A saint Joseph Park']);
-        Setting::create(['key' => 'hospital_email', 'value' => 'cityhospital@gmail.com']);
-        Setting::create(['key' => 'hospital_phone', 'value' => '+919876543210']);
-        Setting::create(['key' => 'hospital_from_day', 'value' => 'Mon to Fri']);
-        Setting::create(['key' => 'hospital_from_time', 'value' => '9 AM to 9 PM']);
+        Setting::create(['key' => 'company_name', 'value' => 'ডেলটা হেলথ কেয়ার, চিটাগাং লিমিটেড']);
+        Setting::create(['key' => 'current_currency', 'value' => 'BDT']);
+        Setting::create(['key' => 'hospital_address', 'value' => ' ২৮, কাতালগঞ্জ, পাঁচলাইশ, চট্টগ্রাম']);
+        Setting::create(['key' => 'hospital_email', 'value' => 'deltahc.ctg2012@yahoo.com']);
+        Setting::create(['key' => 'hospital_phone', 'value' => '+8801841906090']);
+        Setting::create(['key' => 'hospital_from_day', 'value' => '7 Days']);
+        Setting::create(['key' => 'hospital_from_time', 'value' => '24 Hour']);
     }
 }

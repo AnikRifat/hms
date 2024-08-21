@@ -14,6 +14,8 @@ class AssignDefaultRoleToUserSeeder extends Seeder
      */
     public function run(): void
     {
+        /** @var Department $superAdminRole */
+        $superAdminRole = Department::whereName('All')->first();
         /** @var Department $adminRole */
         $adminRole = Department::whereName('Admin')->first();
         /** @var Department $doctorRole */
@@ -28,6 +30,8 @@ class AssignDefaultRoleToUserSeeder extends Seeder
         $pharmacistRole = Department::whereName('Pharmacist')->first();
         /** @var Department $accountantRole */
         $accountantRole = Department::whereName('Accountant')->first();
+
+
 
         $adminPermissions = Permission::all();
         $adminRole->givePermissionTo($adminPermissions);

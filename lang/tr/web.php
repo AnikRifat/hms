@@ -17,10 +17,10 @@ return [
     'testimonials' => 'Referanslar',
     'login' => 'Giriş',
     'register' => 'Kaydol',
-    'start_using_InfyHMS_now' => 'Şimdi InfyHMS\'yi Kullanmaya Başlayın.',
+    'start_using_DHC_now' => 'Şimdi DHC\'yi Kullanmaya Başlayın.',
     'get_started' => 'Başlayın',
     'welcome_to' => 'Hoş Geldiniz',
-    'infyhms' => 'InfyHMS',
+    'DHC' => 'DHC',
     'manage_your_hospital_day_to_day_operations_digitally_with_ease_and_effortlessly' => 'Hastanenizin günlük operasyonlarını dijital olarak kolaylıkla ve zahmetsizce yönetin.',
     'buy_now' => 'Şimdi Satın Alın',
     'home' => 'ev',
@@ -70,7 +70,7 @@ return [
 
     //MISCELLANEOUS FACILITIES keys
     'miscellaneous_facilities' => [
-        'miscellaneous_facilities_of_infyhms' => 'ÇEŞİTLİ ENFYHMS TESİSLERİ',
+        'miscellaneous_facilities_of_DHC' => 'ÇEŞİTLİ ENFYHMS TESİSLERİ',
         'host_in_your_Own_secure_server' => 'Kendi Güvenli Sunucunuzda Barındırın.',
         'no_monthly_or_yearly_fees' => 'Aylık Veya Yıllık Ücret Yok.',
         'customer_support' => '24 / 7 Müşteri Desteği ',

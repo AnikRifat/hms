@@ -15,13 +15,13 @@ class AdminUserSeeder extends Seeder
      */
     public function run(): void
     {
-        $adminRole = Department::whereName('Admin')->first();
+        $adminRole = Department::whereName('All')->first();
 
         $input = [
             'first_name' => 'Super',
             'last_name' => 'Admin',
-            'email' => 'admin@hms.com',
-            'password' => Hash::make('123456789'),
+            'email' => 'admin@gmail.com',
+            'password' => Hash::make('123456'),
             'phone' => '7878454512',
             'gender' => 1,
             'dob' => '1994-12-12',

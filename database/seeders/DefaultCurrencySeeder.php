@@ -15,15 +15,11 @@ class DefaultCurrencySeeder extends Seeder
     {
         $input = [
             [
-                'currency_name' => 'United states dollar',
-                'currency_icon' => '$',
-                'currency_code' => 'USD',
+                'currency_name' => 'Bangladeshi Tk',
+                'currency_icon' => '৳',
+                'currency_code' => 'BDT',
             ],
-            [
-                'currency_name' => 'Indian rupee',
-                'currency_icon' => '₹',
-                'currency_code' => 'INR',
-            ],
+
         ];
 
         foreach ($input as $data) {

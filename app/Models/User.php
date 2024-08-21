@@ -363,7 +363,6 @@ class User extends Authenticatable implements HasMedia, MustVerifyEmail
     public function userRole()
     {
         $role = Department::orderBy('name')->pluck('name', 'id')->toArray();
-
         return $role;
     }
 

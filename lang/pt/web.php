@@ -17,10 +17,10 @@ return [
     'testimonials' => 'Témoignages',
     'login' => 'Connexion',
     'register' => 'S\'inscrire',
-    'start_using_InfyHMS_now' => 'Commencez à utiliser InfyHMS maintenant.',
+    'start_using_DHC_now' => 'Commencez à utiliser DHC maintenant.',
     'get_started' => 'Commencer',
     'welcome_to' => 'Bienvenue dans',
-    'infyhms' => 'InfyHMS',
+    'DHC' => 'DHC',
     'manage_your_hospital_day_to_day_operations_digitally_with_ease_and_effortlessly' => 'Gérez les opérations quotidiennes de votre hôpital numériquement avec facilité et sans effort.',
     'buy_now' => 'Acheter maintenant',
     'home' => 'Casa',
@@ -69,7 +69,7 @@ return [
 
     //MISCELLANEOUS FACILITIES keys
     'miscellaneous_facilities' => [
-        'miscellaneous_facilities_of_infyhms' => 'INSTALAÇÕES DIVERSAS DE INFYHMS',
+        'miscellaneous_facilities_of_DHC' => 'INSTALAÇÕES DIVERSAS DE DHC',
         'host_in_your_Own_secure_server' => 'Host em seu próprio servidor seguro.',
         'no_monthly_or_yearly_fees' => 'Sem taxas mensais ou anuais.',
         'customer_support' => '24/7 Suporte ao cliente',

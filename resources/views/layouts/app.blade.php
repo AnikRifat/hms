@@ -8,6 +8,7 @@
     <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="turbo-cache-control" content="no-cache">
+
     @php
         $settingValue = getSettingValue();
         \Carbon\Carbon::setlocale(config('app.locale'));

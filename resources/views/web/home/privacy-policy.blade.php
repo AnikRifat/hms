@@ -27,19 +27,19 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <img src="{{ asset('web_front/images/page-banner/privacy-policy.png') }}" alt="Infy Care" class="img-fluid" />
+                        <img src="{{ asset('web_front/images/page-banner/privacy-policy.png') }}" alt="Delta Helth Care Chittagong" class="img-fluid" />
                     </div>
                 </div>
             </div>
         </section>
         <!-- end hero section -->
-        
+
          <!-- Start Privacy Policy Area -->
         <section class="terms-service-section p-t-120 p-b-120">
             <div class="container">
                 <p>
                 {!! $frontSetting['privacy_policy'] !!}
-    
+
             </div>
         </section>
         <!-- end terms-service section -->

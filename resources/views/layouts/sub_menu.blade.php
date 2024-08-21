@@ -1134,6 +1134,7 @@
                 </li>
             @endmodule
         @endrole
+        @role('Admin')
         @module('Operation Categories', $modules)
             <li
                 class="nav-item position-relative mx-xl-3 mb-3 mb-xl-0 {{ Request::is('settings*', 'currency-settings*', 'hospital-schedules', 'operation-categories*', 'operations*', 'payment-gateways*','add-custom-fields*') ? '' : 'd-none' }}">
@@ -1143,6 +1144,7 @@
                 </a>
             </li>
         @endmodule
+        @endrole
 
         @module('Operation', $modules)
             <li
@@ -1160,12 +1162,12 @@
                     {{ __('messages.payment_gateways') }}
                 </a>
             </li>
-            {{-- <li class="nav-item position-relative mx-xl-3 mb-3 mb-xl-0 {{ Request::is('settings*', 'currency-settings*', 'hospital-schedules', 'operation-categories*', 'operations*', 'payment-gateways*','add-custom-fields*') ? '' : 'd-none' }}">
+            <li class="nav-item position-relative mx-xl-3 mb-3 mb-xl-0 {{ Request::is('settings*', 'currency-settings*', 'hospital-schedules', 'operation-categories*', 'operations*', 'payment-gateways*','add-custom-fields*') ? '' : 'd-none' }}">
                 <a class="nav-link p-0 {{ Request::is('add-custom-fields*') ? 'active' : '' }}"
                     href="{{ route('add-custom-fields.index') }}">
                     {{ __('messages.custom_field.custom_field') }}
                 </a>
-            </li> --}}
+            </li>
         @endrole
 @role('Doctor')
 <li
@@ -1177,10 +1179,10 @@ class="nav-item position-relative mx-xl-3 mb-3 mb-xl-0 {{ !Request::is('live-con
 </li>
 @endrole
 @role('Admin|Patient|Doctor')
-    {{-- <li class="nav-item position-relative mx-xl-3 mb-3 mb-xl-0 {{ !Request::is('appointments*', 'appointment-calendars', 'appointments-transaction*') ? 'd-none' : '' }}">
+    <li class="nav-item position-relative mx-xl-3 mb-3 mb-xl-0 {{ !Request::is('appointments*', 'appointment-calendars', 'appointments-transaction*') ? 'd-none' : '' }}">
         <a class="nav-link p-0 {{ Request::is('appointments-transaction*')  ? 'active' : '' }}"
             href="{{ route('appointments-transaction.index') }}">
             {{ __('messages.common.appointment_transaction') }}
         </a>
-    </li> --}}
+    </li>
 @endrole

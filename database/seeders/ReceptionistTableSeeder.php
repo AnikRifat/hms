@@ -16,9 +16,9 @@ class ReceptionistTableSeeder extends Seeder
     {
         $input = [
             [
-                'first_name' => 'Ashok',
-                'last_name' => 'Patel',
-                'email' => 'ashok@gmail.com',
+                'first_name' => 'Receptionist',
+                'last_name' => 'Demo',
+                'email' => 'receptionist@gmail.com',
                 'password' => '123456',
                 'designation' => 'Receptionist',
                 'qualification' => 'MCom',

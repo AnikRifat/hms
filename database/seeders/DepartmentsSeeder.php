@@ -13,6 +13,7 @@ class DepartmentsSeeder extends Seeder
     public function run(): void
     {
         $input = [
+            'All',  
             'Admin',
             'Doctor',
             'Patient',
